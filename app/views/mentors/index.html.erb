@@ -1,0 +1,16 @@
+<div class="cards-container" style="max-width: 75vw; margin: 20px auto">
+<%= render 'shared/searchbar' %>
+<% @mentors.each do |mentor| %>
+<div class="custom-card d-flex justify-content-between">
+<div class="custom-avatar">
+<img src="../../assets/images/avatar-test.png" alt="profile-picture">
+</div>
+<div class="infos d-flex">
+<%= mentor.user.name %>
+<p><%= mentor.title %>
+<p><%= mentor.expertise %>
+<p><%= mentor.description %>
+</div>
+</div>
+<% end  %>
+</div>
