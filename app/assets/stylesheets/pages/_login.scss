@@ -1,4 +1,4 @@
-.max-width-container{
+.max-width-container-login{
   margin: 20px auto;
   width: 35vw;
 }
@@ -7,6 +7,10 @@
   margin-left: 200px
 }
 
-.max-width-container h1{
+.max-width-container-login h1{
   font-weight: 500;
+}
+
+.custom-login-btn{
+  border-radius: 10px
 }
