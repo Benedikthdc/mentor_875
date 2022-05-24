@@ -11,11 +11,16 @@
           <div class="infos" style="margin-left: 30px">
           <h2><%= mentor.user.name %></h2>
           <p><%= mentor.title %></p>
-          <p class="expertise-category"><%= mentor.expertise %>
+          <div class="d-flex align-items-center">
+            <div class="category-label me-2"></div>
+              <span class="mentor-expertise"><%= mentor.expertise %></span>
+            </div>
           </div>
           </div>
-        <p style="opacity: 0.4"><%= mentor.description %></p>
-        <p class="custom-show-btn btn btn-primary">show more</p>
+          <div class="text-area">
+              <p class="text-tr"><%= mentor.description %></p>
+          </div>
+          <%= link_to "see more", mentor_path(mentor), class:" custom-show-btn btn btn-primary"%>
         </div>
     <% end  %>
   </div>

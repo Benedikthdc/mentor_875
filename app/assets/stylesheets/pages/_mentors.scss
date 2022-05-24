@@ -23,7 +23,8 @@ body{
 
 .custom-show-btn{
   position: absolute;
-  bottom: 11px;
+  bottom: 20px;
+  border-radius: 5px
 
 }
 
@@ -33,6 +34,15 @@ body{
   font-weight: 700;
 }
 
-.infos p{
-  
+.category-label{
+  padding: 4px;
+  background-color: red;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%
+}
+
+.mentor-expertise{
+  font-size: 15px;
+  opacity: 0.6
 }
