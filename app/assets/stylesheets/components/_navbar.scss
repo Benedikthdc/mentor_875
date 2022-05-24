@@ -15,6 +15,10 @@
   border-bottom: 1px solid;
 }
 
+.nav-item {
+  width: max-content;
+}
+
 .container-info {
   display: flex;
   justify-content: space-between;
@@ -30,4 +34,8 @@
 .container-fluid {
   display: flex;
   width: 100vw;
+}
+
+.avatar:hover {
+  cursor: pointer;
 }
