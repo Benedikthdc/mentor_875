@@ -1,6 +1,22 @@
 .custom-card{
   padding: 40px;
   margin: 20px;
-  background-color: white;
+  background-color: #F5F5F5;
+  width: 550px;
+  height: 320px;
+  border-radius: 7px;
+}
 
+body{
+  width: 100vw;
+}
+
+.custom-avatar{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+body{
+  background-color: white;
 }
