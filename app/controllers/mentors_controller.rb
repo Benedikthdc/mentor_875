@@ -1,6 +1,10 @@
 class MentorsController < ApplicationController
   def index
-    @mentors = Mentor.all
+    if params[:query].present?
+      @mentors = Mentor.where("expertise LIKE ?", "%#{params[:query]}%")
+    else
+      @mentors = Mentor.all
+    end
   end
 
   def show
