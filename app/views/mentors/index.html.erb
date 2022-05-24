@@ -7,14 +7,14 @@
     <% @mentors.each do |mentor| %>
       <div class="custom-card mb-3 mt-5">
         <div class="card-upper-part d-flex mb-3">
-          <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180" alt="profile-picture" class="custom-avatar">
+          <img src=<%= mentor.user.avatar %> alt="profile-picture" class="custom-avatar">
           <div class="infos" style="margin-left: 30px">
-          <%= mentor.user.name %>
-          <p><%= mentor.title %>
-          <p><%= mentor.expertise %>
+          <h2><%= mentor.user.name %></h2>
+          <p><%= mentor.title %></p>
+          <p class="expertise-category"><%= mentor.expertise %>
           </div>
           </div>
-        <p><%= mentor.description %></p>
+        <p style="opacity: 0.4"><%= mentor.description %></p>
         <p class="custom-show-btn btn btn-primary">show more</p>
         </div>
     <% end  %>
