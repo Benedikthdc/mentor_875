@@ -26,3 +26,33 @@
   border-radius: 10px;
   z-index: -1;
 }
+
+.about{
+  width: 90vw;
+  height: 100vh;
+  margin: 20px auto
+}
+ .banner{
+   height: 100vh
+ }
+
+ .about-text{
+   display: flex;
+   justify-content: center
+ }
+ .about-text h1{
+   font-family:Arial, sans-serif;
+   font-size: 50px;
+ }
+
+ .about-card{
+  padding: 30px;
+  background-color: #F5F5F5;
+  width: 370px;
+  height: 290px;
+  border-radius: 7px;
+ }
+
+ .about-container{
+
+ }
