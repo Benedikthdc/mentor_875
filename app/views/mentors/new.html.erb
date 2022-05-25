@@ -20,7 +20,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Tell us more about yourself</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Tell us more about<span style="color: blue"> yourself</span></h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -28,12 +28,12 @@
       <img src=<%= current_user.avatar %> alt="profile">
       <% end %>
         <%= simple_form_for @mentor do |f|%>
-    <%= f.input :title %>
-    <%= f.input :description %>
-    <%= f.input :expertise %>
+    <%= f.input :title, placeholder: "Financial advisor - Mckinsey"%>
+    <%= f.input :description, placeholder: "i have worked in several startup..." %>
+    <%= f.input :expertise, placeholder: "tech"%>
     <%= f.input :linkedin %>
     <%= f.input :avaiability, as: :check_boxes, collection: ["call", "meet", "videocall"] %>
-    <%= f.input :price %>
+    <%= f.input :price, placeholder: "how much would you charge for your mentoring?"%>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
