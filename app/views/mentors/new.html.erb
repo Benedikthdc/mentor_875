@@ -1,6 +1,46 @@
-<%= simple_form_for @mentor do |f|%>
-<%= f.input :title %>
-<%= f.input :description %>
-<%= f.input :expertise %>
-<%= f.submit %>
-<% end %>
+
+<div class="mentor-info-container">
+  <div class="mentor-info">
+    <p>1000+ mentors have already helped people succeed </p>
+  </div>
+
+
+  <div class="hero" style="padding-top: 50px">
+      <h1><b>start you journey as</b>
+      <br>
+      <span class="text-blue"><b>mentor now</b></span></h1>
+  </div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 50%; margin-top: 50px">
+  Start now
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tell us more about yourself</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <% if current_user.avatar.present?  %>
+      <img src=<%= current_user.avatar %> alt="profile">
+      <% end %>
+        <%= simple_form_for @mentor do |f|%>
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <%= f.input :expertise %>
+    <%= f.input :linkedin %>
+    <%= f.input :avaiability, as: :check_boxes, collection: ["call", "meet", "videocall"] %>
+    <%= f.input :price %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <%= f.submit class: "btn btn-primary" %>
+    <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
