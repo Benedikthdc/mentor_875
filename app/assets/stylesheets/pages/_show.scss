@@ -1,14 +1,117 @@
 .avatar-2 img {
- width: 300px;
+ width: 180px;
  border-radius: 50%
 
 }
 
-.big-custom-card{
-  width: 75vw;
-  height: 80vh;
-  margin: 20px auto;
-  padding: 30px;
-  background-color: greenyellow;
-  border-radius: 6px
+// .big-custom-card{
+//   width: 75vw;
+//   height: 80vh;
+//   margin: 20px auto;
+//   padding: 30px;
+//   background-color: #F5F5F5;
+//   border-radius: 6px;
+// }
+// .custom-box-parent {
+//   width: 410px;
+//   height: 61px;
+//   left: 257px;
+//   top: 450px;
+//   background: #9cb3f9;
+//   border-radius: 10px;
+//   margin-top: 304px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// .custom-box-child-1 {
+//   width: 205px;
+//   height: 142px;
+//   background: #b8b8b8;
+//   border-radius: 10px;
+// }
+
+
+// .custom-box-child-2 {
+//   width: 205px;
+//   height: 142px;
+//   background: #b8b8b8;
+//   border-radius: 10px;
+// }
+
+// .custom-box-child-3 {
+//   width: 205px;
+//   height: 142px;
+//   background: #b8b8b8;
+//   border-radius: 10px;
+// }
+
+.show-container {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.show-mentor {
+  width: 70vw;
+  margin: 0 auto;
+  background-color: #F5F5F5;
+  padding: 25px;
+}
+
+.show-mentor-info {
+  display: flex;
+}
+.show-mentor-info-profile {
+  margin: 10px;
+  background-color: #F5F5F5;
+  width: 30%;
+  justify-content: flex-start;
+}
+
+.show-mentor-info-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px
+}
+
+.show-mentor-info-profile-descriptions {
+
+}
+
+.show-mentor-info-description-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.show-mentor-book {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #70adfb;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #1678da;
+  color: white;
+}
+
+.btn-flat-Book {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #085cc9;
+  transition: background 0.3s ease;
+}
+
+.btn-flat-Book:hover {
+  background: #388bdf;
+  color: white;
 }
