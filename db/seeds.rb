@@ -17,42 +17,42 @@ name = ["Gary Vee", "Andrew Tate", "Michael Burry", "Jeremy Dimon", "John Doe", 
   user.save
 end
 
-mentor = Mentor.new(title: "Finance Manager at HSBC", expertise: "finance", description: "I have worked at several banks and ended up as Finance Manager at HSBC")
+mentor = Mentor.new(title: "Finance Manager at HSBC", expertise: "finance", description: "I have worked at several banks and ended up as Finance Manager at HSBC", price: 50, avaiability: "call")
 mentor.user = User.all.sample
 mentor.save
 
-mentor = Mentor.new(title: "CFO at Goldman Sachs", expertise: "finance", description: "I started my career as analyst at Morgan Stanley. After that I got hired as CFO at Goldman Sachs")
+mentor = Mentor.new(title: "CFO at Goldman Sachs", expertise: "finance", description: "I started my career as analyst at Morgan Stanley. After that I got hired as CFO at Goldman Sachs", price: 50, avaiability: "call")
 mentor.user = User.all.sample
 mentor.save
 
-mentor = Mentor.new(title: "Chairman of Morgan Stanley", expertise: "finance", description: "I started as an analyst at Morgan Stanley and worked my way all the way up. For the last 2 years I became the Chairman at Morgan Stanley")
+mentor = Mentor.new(title: "Chairman of Morgan Stanley", expertise: "finance", description: "I started as an analyst at Morgan Stanley and worked my way all the way up. For the last 2 years I became the Chairman at Morgan Stanley", price: 50, avaiability: "call")
 mentor.user = User.all.sample
 mentor.save
 
-mentor = Mentor.new(title: "Project Manager at PWC", expertise: "consulting", description: "I typically provide oversight and leadership in executing projects from planning to completion. My daily tasks can include managing budgets, resources and relationships to achieve organizational objectives, as well as planning, developing and executing schedules to ensure timely completion of projects.")
+mentor = Mentor.new(title: "Project Manager at PWC", expertise: "consulting", description: "I typically provide oversight and leadership in executing projects from planning to completion. My daily tasks can include managing budgets, resources and relationships to achieve organizational objectives, as well as planning, developing and executing schedules to ensure timely completion of projects.", price: 50, avaiability: "call")
 mentor.user = User.all.sample
 mentor.save
 
-mentor = Mentor.new(title: "Senior Consultant at KPMG", expertise: "consulting", description: "I started as a Junior Consultant and worked my way all the until I became Senior Consultant. My job is to improve the overall business model, client or employee relations, or other facets of day-to-day operations.")
+mentor = Mentor.new(title: "Senior Consultant at KPMG", expertise: "consulting", description: "I started as a Junior Consultant and worked my way all the until I became Senior Consultant. My job is to improve the overall business model, client or employee relations, or other facets of day-to-day operations.", price: 50, avaiability: "call")
 mentor.user = User.all.sample
 mentor.save
 
-mentor = Mentor.new(title: "Junior Consultant at EY", expertise: "consulting", description: "I am a Junior Consultant at EY since 2011, I work with clients on a project or program related to their specialization.")
+mentor = Mentor.new(title: "Junior Consultant at EY", expertise: "consulting", description: "I am a Junior Consultant at EY since 2011, I work with clients on a project or program related to their specialization.", price: 50, avaiability: "call")
 mentor.user = User.all.sample
 mentor.save
 
-mentor = Mentor.new(title: "Tech Developer at Apple", expertise: "tech", description: "I offer development services in various spaces, including software, web development, and even app development")
+mentor = Mentor.new(title: "Tech Developer at Apple", expertise: "tech", description: "I offer development services in various spaces, including software, web development, and even app development", price: 50, avaiability: "call")
 mentor.user = User.all.sample
 mentor.save
 
-mentor = Mentor.new(title: "Fullstack Developer at Microsoft", expertise: "tech", description: "I handle all the work of databases, servers, systems engineering, and clients.")
+mentor = Mentor.new(title: "Fullstack Developer at Microsoft", expertise: "tech", description: "I handle all the work of databases, servers, systems engineering, and clients.", price: 50, avaiability: "call")
 mentor.user = User.all.sample
 mentor.save
 
-mentor = Mentor.new(title: "Blockchain Engeneer at Meta Platforms", expertise: "tech", description: "I perform the operations, designing, development, analyzing, implementing, and supporting a distributed blockchain network")
+mentor = Mentor.new(title: "Blockchain Engeneer at Meta", expertise: "tech", description: "I perform the operations, designing, development, analyzing, implementing, and supporting a distributed blockchain network", price: 50, avaiability: "call")
 mentor.user = User.all.sample
 mentor.save
 
-mentor = Mentor.new(title: "Analyst at BlackRock", expertise: "finance", description: "I gather, interpret, and use complex data to develop actionable steps that will improve processes and optimize results")
+mentor = Mentor.new(title: "Analyst at BlackRock", expertise: "finance", description: "I gather, interpret, and use complex data to develop actionable steps that will improve processes and optimize results", price: 50, avaiability: "call")
 mentor.user = User.all.sample
 mentor.save

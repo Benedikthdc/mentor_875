@@ -1,7 +1,8 @@
 class MentorsController < ApplicationController
   def index
     if params[:query].present?
-      @mentors = Mentor.where("expertise LIKE ?", "%#{params[:query]}%")
+      sql_query = "title ILIKE :query OR expertise ILIKE :query"
+      @mentors = Mentor.where(sql_query, query: "%#{params[:query]}%")
       @result = @mentors.count
     else
       @mentors = Mentor.all
@@ -29,6 +30,6 @@ class MentorsController < ApplicationController
   private
 
   def mentor_params
-    params.require(:mentor).permit(:expertise, :description, :title)
+    params.require(:mentor).permit(:expertise, :description, :title, :linkedin, :avaiability)
   end
 end
