@@ -10,6 +10,8 @@ class MentorsController < ApplicationController
   end
 
   def show
+    @booking = Booking.new
+    @user = current_user
     @mentor = Mentor.find(params[:id])
   end
 
