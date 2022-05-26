@@ -1,0 +1,77 @@
+
+
+<div class="profile-background"></div>
+<div class="profile-container">
+<div class="profile-infos-upperpart d-flex align-items-center mb-4">
+<img src="<%= @user.avatar %>" alt="" style="width: 180px; border-radius: 50%">
+<div class="profile-user-info">
+<h2>Profile</h2>
+<%= @user.name %>
+</div>
+</div>
+
+<% if @user.mentor %>
+<div class="user-profile">
+<p class="mentor-header mb-0">Title:</p>
+<p ><%= @user.mentor.title %></p>
+<p class="mentor-header mb-0">Description:</p>
+<p><%= @user.mentor.description%></p>
+<p class="mentor-header mb-0">Expertise:</p>
+<p><%= @user.mentor.expertise %></p>
+</div>
+<% end %>
+
+<% if @user.mentor.bookings %>
+  <h2>My mentor calls</h2>
+  <hr>
+  <div class="booking-cards d-flex" style="flex-wrap: wrap">
+    <% @user.mentor.bookings.each do |booking| %>
+      <div class="custom-card mb-3 mt-2" style="height:200px; margin-right: 30px">
+        <div class="card-upper-part d-flex mb-3">
+          <img src=<%= booking.user.avatar %> alt="profile-picture" class="custom-avatar">
+          <div class="infos" style="margin-left: 30px">
+          <h2><%= booking.user.name %></h2>
+          <div class="text-area">
+          <p>scheduled at:</p>
+              <p class="text-tr">
+              <%= booking.date %></p>
+      </div>
+          </div>
+          </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+
+
+<% if @user.bookings %>
+  <h2>Bookings</h2>
+  <hr>
+  <div class="booking-cards d-flex" style="flex-wrap: wrap; margin-bottom: 200px">
+  <% @user.bookings.each do |booking| %>
+      <% if booking.user.name != booking.mentor.user.name %>
+        <div class="custom-card mb-3 mt-2" style="height:300px; margin-right: 30px">
+        <div class="card-upper-part d-flex mb-3">
+          <img src=<%= booking.mentor.user.avatar %> alt="profile-picture" class="custom-avatar">
+          <div class="infos" style="margin-left: 30px">
+          <h2><%= booking.mentor.user.name %></h2>
+          <p><%= booking.mentor.title %></p>
+          <div class="d-flex align-items-center">
+            <div class="category-label me-2"></div>
+              <span class="mentor-expertise"><%= booking.mentor.expertise %></span>
+            </div>
+          </div>
+          </div>
+          <div class="text-area d-flex justify-content-between">
+          <p>scheduled<br> at:</p>
+              <p class="text-tr">
+              <%= booking.date %></p>
+          </div>
+          <%= link_to "show more", mentor_path(booking.mentor), class: "btn btn-primary", style:"width:300px"%>
+        </div>
+<% end %>
+<% end %>
+<% end %>
+</div>
+
+<%= render 'shared/footer' %>
