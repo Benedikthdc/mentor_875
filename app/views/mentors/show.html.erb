@@ -5,13 +5,13 @@
         <div class="avatar-2 d-flex">
           <img src="<%= @mentor.user.avatar %>" alt="">
         </div>
-          <div class="show-mentor-info-profile-descriptions" >
+          <div class="show-mentor-info-profile-descriptions" data-controller="flatpickr">
 
               <p style="margin-top: 20px"> Choose a Date</p>
-        <%= simple_form_for [@mentor, @booking] do |f|%>
-          <%= f.input :date %>
-          <%= f.submit class: "btn btn-primary" %>
-        <% end %>
+            <%= simple_form_for [@mentor, @booking] do |f|%>
+              <%= f.input :date, as: :string, required: false, input_html: {class: "datepicker"}, label:false %>
+              <%= f.submit "Book now!", class: "btn btn-primary" %>
+            <% end %>
           </div>
       </div>
       <div class="show-mentor-info-description ml-7">
