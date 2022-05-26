@@ -6,7 +6,6 @@
   padding-top: 150px;
 
   h1{
-    font-family:Arial, sans-serif;
     font-size: 50px;
   }
 }
@@ -41,7 +40,6 @@
     justify-content: center
   }
   .about-text h1{
-    font-family:Arial, sans-serif;
     font-size: 50px;
   }
 
@@ -71,4 +69,15 @@
     background-position: center;
     background-size: 200px;
     background-repeat: no-repeat;
+  }
+
+  h1{
+    font-family: 'Roboto', sans-serif;
+  }
+  h2{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  p{
+    font-family: 'Libre Franklin', sans-serif;
   }
