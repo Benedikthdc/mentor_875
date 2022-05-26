@@ -53,7 +53,7 @@
 }
 
 .show-mentor {
-  width: 70vw;
+  width: 90vw;
   margin: 0 auto;
   background-color: #F5F5F5;
   padding: 25px;
@@ -113,4 +113,13 @@
 .btn-flat-Book:hover {
   background: #388bdf;
   color: rgb(241, 233, 233);
+}
+
+.form-label.datetime{
+  display: none;
+}
+
+.text-right{
+  color: #085cc9;
+  font-size: 35px
 }

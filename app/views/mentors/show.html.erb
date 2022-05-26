@@ -6,18 +6,17 @@
           <img src="<%= @mentor.user.avatar %>" alt="">
         </div>
           <div class="show-mentor-info-profile-descriptions" >
-              <div><%= @mentor.price %></div>
-              <a style="width: 190px; margin-top: 10px"class="btn btn-flat-Time" href="#">Choose a time</a>
-          <div><%= @mentor.avaiability %></div>
-         <%= simple_form_for [@mentor, @booking] do |f|%>
+
+              <p style="margin-top: 20px"> Choose a Date</p>
+        <%= simple_form_for [@mentor, @booking] do |f|%>
           <%= f.input :date %>
-          <%= f.submit %>
-         <% end %>
+          <%= f.submit class: "btn btn-primary" %>
+        <% end %>
           </div>
       </div>
       <div class="show-mentor-info-description ml-7">
         <div class="d-flex align-items-center justify-content-between">
-          <div>
+          <div class="d-flex align-items-center justify-content-center">
             <h1><%= @mentor.user.name %></h1>
             <span>
             <a href="https://www.linkedin.com/in/benedikt-conze-4a635a210/" style="margin-left: 10px;font-size: 20px"><i class="fab fa-linkedin"></i></a>
@@ -26,13 +25,10 @@
           <p class="text-right">30$</p>
         </div>
           <p><%= @mentor.title %></p>
-          <div class="category-label me-2"></div>
+
           <span class="mentor-expertise"><%= @mentor.expertise %></span>
           <p style="margin-top: 20px"><%= @mentor.description %></p>
           <div class="show-mentor-info-description-buttons">
-          <div class="scraping-Linkedin">
-          Space for the scraped stuff from Linked-in
-          </div>
         </div>
       </div>
     </div>
@@ -46,4 +42,3 @@
 </div>
 
 <%= render 'shared/footer' %>
-
