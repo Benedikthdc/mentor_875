@@ -6,7 +6,7 @@
 <img src="<%= @user.avatar %>" alt="" style="width: 180px; border-radius: 50%">
 <div class="profile-user-info">
 <h2>Profile</h2>
-<%= @user.name %>
+@<%= @user.name %>
 </div>
 </div>
 
@@ -20,7 +20,6 @@
 <p class="mentor-header mb-0">Expertise:</p>
 <p><%= @user.mentor.expertise %></p>
 </div>
-<% end %>
 
 <% if @user.mentor.bookings %>
   <h2>My mentor calls</h2>
@@ -42,6 +41,7 @@
       </div>
     <% end %>
   </div>
+<% end %>
 <% end %>
 
 

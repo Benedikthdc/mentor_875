@@ -23,7 +23,7 @@ class MentorsController < ApplicationController
     @mentor = Mentor.new(mentor_params)
     @mentor.user = current_user
     if @mentor.save
-      redirect_to "/mentors"
+      redirect_to "/"
     else
       render :new
     end
