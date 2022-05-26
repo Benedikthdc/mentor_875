@@ -89,19 +89,18 @@
   justify-content: center;
   margin-top: 110px;
 }
-
-.btn-flat {
-  color: white;
-  padding: 8px 24px;
+.btn-flat-Time{
+  background: white;
   border-radius: 4px;
-  background: #70adfb;
-  transition: background 0.3s ease;
+  color: #085cc9;
+  width: fit-content;
 }
 
-.btn-flat:hover {
-  background: #1678da;
-  color: white;
+.btn-flat-Time:hover{
+  background: #085cc9;
+  color: white
 }
+
 
 .btn-flat-Book {
   color: white;
@@ -113,5 +112,5 @@
 
 .btn-flat-Book:hover {
   background: #388bdf;
-  color: white;
+  color: rgb(241, 233, 233);
 }
