@@ -25,14 +25,13 @@
       </div>
       <div class="modal-body">
       <% if current_user.avatar.present?  %>
-      <img src=<%= current_user.avatar %> alt="profile">
+      <img src=<%= current_user.avatar %> alt="profile" style="width: 80px; border-radius: 50%;">
       <% end %>
         <%= simple_form_for @mentor do |f|%>
     <%= f.input :title, placeholder: "Financial advisor - Mckinsey"%>
     <%= f.input :description, placeholder: "i have worked in several startup..." %>
     <%= f.input :expertise, placeholder: "tech"%>
     <%= f.input :linkedin %>
-    <%= f.input :avaiability, as: :check_boxes, collection: ["call", "meet", "videocall"] %>
     <%= f.input :price, placeholder: "how much would you charge for your mentoring?"%>
       </div>
       <div class="modal-footer">
